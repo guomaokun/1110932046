@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="index.css">
+ <title>作業-九九乘法表-js</title>
+ <style>
+  thead{
+   border-collapse: collapse;
+   background: #000;
+   color: #FFF;
+   font-weight: bold;
+   font-size: 14px;
+   text-align: center;
+  }
+  span{
+   display:  inline-block;
+   width: 17px;
+   text-align: right;
+  }
+ </style>
+</head>
+<body>
+ <center><a href="index.html">回首頁</a>
+ <table border="1">
+  <thead>
+   <td colspan="4">九九乘法表-js</td>
+  </thead>
+  <script>
+   for( i=1 ; i<=9 ; i++)
+   {
+    if(i%3==1)
+    {
+     document.write("<tr>");
+    }
+    document.write("<td>");
+    for( j=1 ; j<=9 ; j++)
+    {
+     document.write(i+" * "+j+"=<span>"+(i*j)+"</span><br>");
+    }
+    document.write("</td>");
+    if(i%3==0)
+    {
+     document.write("</tr>");
+    }
+   } 
+  </script>
+ </table>
+ </center>
+</body>
+</html>
